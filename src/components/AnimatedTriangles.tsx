@@ -40,14 +40,14 @@ export default function AnimatedTriangles() {
   return (
     <div 
       ref={trianglesRef}
-      className="flex flex-col gap-1 items-center justify-center"
+      className="flex flex-col gap-3 items-center justify-center"
     >
       {[...Array(2)].map((_, index) => (
         <svg
           key={index}
-          width="30"
-          height="25"
-          viewBox="0 0 30 25"
+          width="40"
+          height="35"
+          viewBox="0 0 40 35"
           className="triangle"
           style={{
             filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.15))'
@@ -55,7 +55,7 @@ export default function AnimatedTriangles() {
         >
           <path
             className="triangle-path"
-            d="M15 25 L30 0 L0 0 Z"
+            d="M20 35 L40 0 L0 0 Z"
             fill={index === 0 ? '#F4B942' : '#D97706'}
           />
         </svg>

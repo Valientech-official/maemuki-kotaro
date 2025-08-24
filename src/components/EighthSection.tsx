@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
+import { gsap } from "gsap";
 import AnimatedCounter from "./AnimatedCounter";
 
 const imgGradientBackground = "/assets/c0e6d814a372564455179b3d5fe6229f0241bfce.png";
@@ -17,6 +18,7 @@ interface FAQItem {
 }
 
 export default function EighthSection() {
+  const faqContainerRef = useRef<HTMLDivElement>(null);
   const [faqItems, setFaqItems] = useState<FAQItem[]>([
     {
       question: "失業保険の受給条件が知りたいです",
@@ -45,7 +47,53 @@ export default function EighthSection() {
     }
   ]);
 
+  useEffect(() => {
+    if (!faqContainerRef.current) return;
+
+    // FAQ項目にエントランスアニメーションを追加
+    const faqItems = faqContainerRef.current.querySelectorAll('.faq-item');
+    gsap.fromTo(faqItems, 
+      { opacity: 0, y: 20 },
+      { 
+        opacity: 1, 
+        y: 0, 
+        duration: 0.6, 
+        stagger: 0.1,
+        ease: "power2.out"
+      }
+    );
+  }, []);
+
   const toggleFAQ = (index: number) => {
+    const answerElement = document.querySelector(`#faq-answer-${index}`);
+    
+    if (faqItems[index].isOpen) {
+      // 閉じるアニメーション
+      if (answerElement) {
+        gsap.to(answerElement, {
+          height: 0,
+          opacity: 0,
+          duration: 0.3,
+          ease: "power2.inOut"
+        });
+      }
+    } else {
+      // 開くアニメーション
+      if (answerElement) {
+        gsap.set(answerElement, { height: 'auto' });
+        const height = answerElement.scrollHeight;
+        gsap.fromTo(answerElement, 
+          { height: 0, opacity: 0 },
+          { 
+            height: height, 
+            opacity: 1, 
+            duration: 0.4, 
+            ease: "power2.out" 
+          }
+        );
+      }
+    }
+    
     setFaqItems(prev => prev.map((item, i) => ({
       ...item,
       isOpen: i === index ? !item.isOpen : false
@@ -54,7 +102,7 @@ export default function EighthSection() {
 
   return (
     <div 
-      className="content-stretch flex flex-col gap-8 items-center justify-center relative w-[390px]" 
+      className="content-stretch flex flex-col gap-8 items-center justify-center relative w-[390px] overflow-hidden" 
       data-name="Section" 
       data-node-id="1:5830"
       style={{ backgroundColor: 'rgba(228, 100, 33, 0.2)' }}
@@ -84,7 +132,7 @@ export default function EighthSection() {
       </div>
       
       <div 
-        className="content-stretch flex flex-col gap-[80.01px] items-center justify-start relative shrink-0 px-4" 
+        className="content-stretch flex flex-col gap-[120px] items-center justify-start relative shrink-0 px-4 pt-[60px]" 
         data-name="Container" 
         data-node-id="1:5851"
       >
@@ -94,25 +142,26 @@ export default function EighthSection() {
           data-node-id="1:5852"
         >
           <div 
-            className="relative rounded shrink-0 w-full z-[2] border border-slate-200" 
+            ref={faqContainerRef}
+            className="relative rounded shrink-0 w-full z-[2] border border-orange-200 shadow-lg" 
             data-name="List" 
             data-node-id="1:5853"
           >
             {faqItems.map((item, index) => (
-              <div key={index} className="border-b border-slate-200 last:border-b-0">
+              <div key={index} className="faq-item border-b border-orange-100 last:border-b-0">
                 <div 
-                  className="bg-white box-border content-stretch flex items-center justify-between pb-[17px] pt-4 px-4 cursor-pointer hover:bg-gray-50 transition-colors"
+                  className="bg-white box-border content-stretch flex items-center justify-between pb-[17px] pt-4 px-4 cursor-pointer hover:bg-orange-50 transition-all duration-300"
                   onClick={() => toggleFAQ(index)}
                 >
                   <div className="content-stretch flex gap-3 items-center justify-start relative shrink-0">
                     <div 
-                      className={`${index === 0 && item.isOpen ? 'bg-[#e46421]' : 'bg-teal-700'} content-stretch flex items-center justify-center relative rounded-[18px] shrink-0 size-9`}
+                      className={`${item.isOpen ? 'bg-[#e46421]' : 'bg-[#f97316]'} content-stretch flex items-center justify-center relative rounded-[18px] shrink-0 size-9 transition-colors duration-300`}
                     >
                       <div className="flex flex-col font-bold justify-center leading-[0] not-italic relative shrink-0 text-white text-[16px] text-center text-nowrap tracking-[0.7px]">
                         <p className="leading-[16px] whitespace-pre">Q</p>
                       </div>
                     </div>
-                    <div className="flex flex-col font-bold justify-center leading-[0] relative shrink-0 text-[14px] text-slate-700 tracking-[0.7px]">
+                    <div className="flex flex-col font-bold justify-center leading-[0] relative shrink-0 text-[14px] text-slate-800 tracking-[0.7px]">
                       <p className="leading-[22.4px] whitespace-pre">{item.question}</p>
                     </div>
                   </div>
@@ -125,26 +174,31 @@ export default function EighthSection() {
                   </div>
                 </div>
                 
-                {item.isOpen && item.answer && (
-                  <div className="bg-white box-border content-stretch flex flex-col items-start justify-start p-[16px] border-t border-slate-100">
-                    <div className="content-stretch flex gap-4 items-start justify-start overflow-clip relative shrink-0 w-full">
-                      <div className="bg-teal-500 content-stretch flex items-center justify-center relative rounded-[18px] shrink-0 size-9">
-                        <div className="flex items-center justify-center relative shrink-0">
-                          <img alt="" className="block max-w-none size-full" src={imgVector1} />
+                <div 
+                  id={`faq-answer-${index}`}
+                  className={`bg-gradient-to-r from-orange-50 to-amber-50 overflow-hidden ${!item.isOpen ? 'h-0 opacity-0' : ''}`}
+                >
+                  {item.answer && (
+                    <div className="box-border content-stretch flex flex-col items-start justify-start p-[16px] border-t border-orange-100">
+                      <div className="content-stretch flex gap-4 items-start justify-start overflow-clip relative shrink-0 w-full">
+                        <div className="bg-[#f97316] content-stretch flex items-center justify-center relative rounded-[18px] shrink-0 size-9">
+                          <div className="flex items-center justify-center relative shrink-0">
+                            <img alt="" className="block max-w-none size-full" src={imgVector1} />
+                          </div>
+                        </div>
+                        <div className="flex flex-col justify-center leading-[28px] relative shrink-0 text-[13.563px] text-slate-800 tracking-[0.7px] whitespace-pre">
+                          <p className="whitespace-pre-wrap">{item.answer}</p>
                         </div>
                       </div>
-                      <div className="flex flex-col justify-center leading-[28px] relative shrink-0 text-[13.563px] text-slate-900 tracking-[0.7px] whitespace-pre">
-                        <p className="whitespace-pre-wrap">{item.answer}</p>
-                      </div>
                     </div>
-                  </div>
-                )}
+                  )}
+                </div>
               </div>
             ))}
           </div>
           
           <div 
-            className="bg-gradient-to-b from-[#2dd4bf] h-12 relative rounded-3xl shrink-0 to-[#14b8a6] z-[1] cursor-pointer hover:from-[#22d3aa] hover:to-[#0f766e] transition-colors" 
+            className="bg-gradient-to-b from-[#f97316] h-12 relative rounded-3xl shrink-0 to-[#ea580c] z-[1] cursor-pointer hover:from-[#fb923c] hover:to-[#dc2626] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl" 
             data-name="Button" 
             data-node-id="1:5900"
           >
@@ -156,7 +210,7 @@ export default function EighthSection() {
               </div>
             </div>
             <div className="absolute inset-0 pointer-events-none shadow-[0px_1px_0px_1px_inset_rgba(255,255,255,0.4)]" />
-            <div className="absolute border border-solid border-teal-500 inset-0 pointer-events-none rounded-3xl shadow-[0px_1px_3px_0px_rgba(0,0,0,0.2)]" />
+            <div className="absolute border border-solid border-orange-600 inset-0 pointer-events-none rounded-3xl shadow-[0px_1px_3px_0px_rgba(0,0,0,0.2)]" />
           </div>
         </div>
         

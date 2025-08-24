@@ -14,7 +14,7 @@ const img31 = "/assets/fd05d40e5c3b0d797ff1a0caf4d567883493d3c1.png";
 export default function FifthSection() {
   return (
     <div 
-      className="bg-center bg-cover bg-no-repeat box-border content-stretch flex flex-col items-center justify-center pb-10 pt-0 px-4 relative w-[390px]" 
+      className="bg-center bg-cover bg-no-repeat box-border content-stretch flex flex-col items-center justify-center pb-10 pt-0 px-4 relative w-[390px] fifth-section" 
       data-name="Section" 
       data-node-id="1:5138" 
       style={{ 
@@ -22,8 +22,24 @@ export default function FifthSection() {
         backgroundColor: 'rgba(228, 100, 33, 0.2)'
       }}
     >
+      <style jsx>{`
+        .fifth-section::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 135px;
+          background-color: #FDE7DB;
+          z-index: 1;
+        }
+        .fifth-section > * {
+          position: relative;
+          z-index: 2;
+        }
+      `}</style>
       <div 
-        className="bg-center bg-cover bg-no-repeat h-[222px] shrink-0 w-[389px]" 
+        className="bg-center bg-cover bg-no-repeat h-[222px] shrink-0 w-[389px] mt-[50px]" 
         data-name="段落テキストのコピー (14) 1" 
         data-node-id="57:3963" 
         style={{ backgroundImage: `url('${img141}')` }} 

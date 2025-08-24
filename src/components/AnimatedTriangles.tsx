@@ -9,18 +9,30 @@ export default function AnimatedTriangles() {
   useEffect(() => {
     if (!trianglesRef.current) return;
 
-    const triangles = trianglesRef.current.querySelectorAll('.triangle');
+    const triangles = trianglesRef.current.querySelectorAll('.triangle-path');
 
-    // 各三角形に個別のアニメーションを設定
+    // 各三角形に色の切り替えアニメーションを設定
     triangles.forEach((triangle, index) => {
-      gsap.to(triangle, {
-        y: -20,
-        duration: 1.5 + (index * 0.2), // 少しずつタイミングをずらす
-        repeat: -1,
-        yoyo: true,
-        ease: "power2.inOut",
-        delay: index * 0.3 // 開始タイミングをずらす
+      const tl = gsap.timeline({ repeat: -1 });
+      
+      // 上の三角形は薄いオレンジから始まり、下の三角形は濃いオレンジから始まる
+      const startColor = index === 0 ? '#F4B942' : '#D97706';
+      const endColor = index === 0 ? '#D97706' : '#F4B942';
+      
+      // GSAPでSVGの属性をアニメーションするためにattr()を使用
+      tl.to(triangle, {
+        attr: { fill: endColor },
+        duration: 1,
+        ease: "power2.inOut"
+      })
+      .to(triangle, {
+        attr: { fill: startColor },
+        duration: 1,
+        ease: "power2.inOut"
       });
+
+      // 同時に開始
+      tl.delay(0);
     });
 
   }, []);
@@ -28,16 +40,25 @@ export default function AnimatedTriangles() {
   return (
     <div 
       ref={trianglesRef}
-      className="flex gap-2 items-center justify-center"
+      className="flex flex-col gap-1 items-center justify-center"
     >
-      {[...Array(3)].map((_, index) => (
-        <div
+      {[...Array(2)].map((_, index) => (
+        <svg
           key={index}
-          className="triangle w-0 h-0 border-l-[8px] border-r-[8px] border-b-[14px] border-l-transparent border-r-transparent border-b-white opacity-80"
+          width="30"
+          height="25"
+          viewBox="0 0 30 25"
+          className="triangle"
           style={{
-            filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.2))'
+            filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.15))'
           }}
-        />
+        >
+          <path
+            className="triangle-path"
+            d="M15 25 L30 0 L0 0 Z"
+            fill={index === 0 ? '#F4B942' : '#D97706'}
+          />
+        </svg>
       ))}
     </div>
   );

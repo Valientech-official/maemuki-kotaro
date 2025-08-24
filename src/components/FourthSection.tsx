@@ -15,10 +15,13 @@ export default function FourthSection() {
       }}
     >
       <div 
-        className="bg-center bg-top bg-no-repeat h-[415px] shrink-0 w-full relative z-40 overflow-hidden" 
+        className="bg-center bg-cover bg-no-repeat h-[415px] shrink-0 w-full relative z-40 overflow-hidden" 
         data-name="段落テキストのコピー (13) 1" 
         data-node-id="57:3960" 
-        style={{ backgroundImage: `url('${img131}')` }} 
+        style={{ 
+          backgroundImage: `url('${img131}')`,
+          backgroundPosition: 'center top'
+        }} 
       />
       
       {/* アニメーション付き三角形 */}

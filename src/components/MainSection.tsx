@@ -92,16 +92,19 @@ export default function MainSection() {
   return (
     <>
     <div
-      className="bg-center bg-cover bg-no-repeat box-border content-stretch flex flex-col items-start justify-start pb-0 pt-[72px] px-0 relative w-[390px]"
+      className="bg-center bg-cover bg-no-repeat box-border content-stretch flex flex-col items-start justify-start pb-0 pt-[72px] px-0 relative w-[390px] main-section"
       data-name="Section"
       data-node-id="1:3904"
       style={{ 
-        backgroundImage: `url('${imgSection}')`,
-        backgroundColor: 'rgba(228, 100, 33, 0.2)'
+        backgroundImage: `url('${imgSection}')`
       }}
     >
+      <div 
+        className="absolute inset-0 z-0"
+        style={{ backgroundColor: 'rgba(228, 100, 33, 0.2)' }}
+      />
       <div
-        className="box-border content-stretch flex flex-col h-[908px] items-start justify-start max-w-[450px] px-4 py-0 relative shrink-0 w-full"
+        className="box-border content-stretch flex flex-col h-[908px] items-start justify-start max-w-[450px] px-4 py-0 relative shrink-0 w-full z-10"
         data-name="Container"
         data-node-id="1:3905"
       >

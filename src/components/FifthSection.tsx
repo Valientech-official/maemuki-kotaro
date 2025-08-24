@@ -18,10 +18,13 @@ export default function FifthSection() {
       data-name="Section" 
       data-node-id="1:5138" 
       style={{ 
-        backgroundImage: `url('${imgSection}')`,
-        backgroundColor: 'rgba(228, 100, 33, 0.2)'
+        backgroundImage: `url('${imgSection}')`
       }}
     >
+      <div 
+        className="absolute inset-0 z-0"
+        style={{ backgroundColor: 'rgba(228, 100, 33, 0.2)' }}
+      />
       <style jsx>{`
         .fifth-section::before {
           content: '';
@@ -33,7 +36,7 @@ export default function FifthSection() {
           background-color: #FDE7DB;
           z-index: 1;
         }
-        .fifth-section > * {
+        .fifth-section > *:not(style) {
           position: relative;
           z-index: 2;
         }

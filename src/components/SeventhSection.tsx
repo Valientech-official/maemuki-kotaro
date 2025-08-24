@@ -11,12 +11,15 @@ export default function SeventhSection() {
       data-name="Section" 
       data-node-id="1:5711" 
       style={{ 
-        backgroundImage: `url('${imgSection}')`,
-        backgroundColor: 'rgba(228, 100, 33, 0.2)'
+        backgroundImage: `url('${imgSection}')`
       }}
     >
       <div 
-        className="box-border content-stretch flex flex-col items-center justify-center max-w-[450px] px-4 py-0 relative shrink-0" 
+        className="absolute inset-0 z-0"
+        style={{ backgroundColor: 'rgba(228, 100, 33, 0.2)' }}
+      />
+      <div 
+        className="box-border content-stretch flex flex-col items-center justify-center max-w-[450px] px-4 py-0 relative shrink-0 z-10" 
         data-name="Container" 
         data-node-id="1:5712"
       >

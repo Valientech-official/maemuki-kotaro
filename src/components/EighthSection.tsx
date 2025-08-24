@@ -108,7 +108,7 @@ export default function EighthSection() {
       style={{ backgroundColor: 'rgba(228, 100, 33, 0.2)' }}
     >
       <div 
-        className="content-stretch flex gap-[23.99px] items-center justify-center relative shrink-0" 
+        className="content-stretch flex gap-[23.99px] items-center justify-center relative shrink-0 mt-12" 
         data-name="Container" 
         data-node-id="1:5831"
       >
@@ -132,28 +132,28 @@ export default function EighthSection() {
       </div>
       
       <div 
-        className="content-stretch flex flex-col gap-[120px] items-center justify-start relative shrink-0 px-4 pt-[60px]" 
+        className="content-stretch flex flex-col gap-[120px] items-center justify-start relative shrink-0 px-6 pt-[60px] w-full" 
         data-name="Container" 
         data-node-id="1:5851"
       >
         <div 
-          className="content-stretch flex flex-col gap-[24.01px] isolate items-center justify-start relative shrink-0" 
+          className="content-stretch flex flex-col gap-[24.01px] items-center justify-start relative shrink-0 w-full max-w-[342px]" 
           data-name="Container" 
           data-node-id="1:5852"
         >
           <div 
             ref={faqContainerRef}
-            className="relative rounded shrink-0 w-full z-[2] border border-orange-200 shadow-lg" 
+            className="relative rounded shrink-0 z-[2] border border-orange-200 shadow-lg w-full bg-white" 
             data-name="List" 
             data-node-id="1:5853"
           >
             {faqItems.map((item, index) => (
               <div key={index} className="faq-item border-b border-orange-100 last:border-b-0">
                 <div 
-                  className="bg-white box-border content-stretch flex items-center justify-between pb-[17px] pt-4 px-4 cursor-pointer hover:bg-orange-50 transition-all duration-300"
+                  className="bg-white box-border content-stretch flex items-start justify-between pb-[17px] pt-4 px-4 cursor-pointer hover:bg-orange-50 transition-all duration-300"
                   onClick={() => toggleFAQ(index)}
                 >
-                  <div className="content-stretch flex gap-3 items-center justify-start relative shrink-0">
+                  <div className="content-stretch flex gap-3 items-start justify-start relative flex-1 min-w-0">
                     <div 
                       className={`${item.isOpen ? 'bg-[#e46421]' : 'bg-[#f97316]'} content-stretch flex items-center justify-center relative rounded-[18px] shrink-0 size-9 transition-colors duration-300`}
                     >
@@ -161,8 +161,8 @@ export default function EighthSection() {
                         <p className="leading-[16px] whitespace-pre">Q</p>
                       </div>
                     </div>
-                    <div className="flex flex-col font-bold justify-center leading-[0] relative shrink-0 text-[14px] text-slate-800 tracking-[0.7px]">
-                      <p className="leading-[22.4px] whitespace-pre">{item.question}</p>
+                    <div className="flex flex-col font-bold justify-center leading-[0] relative flex-1 min-w-0 text-[14px] text-slate-800 tracking-[0.7px]">
+                      <p className="leading-[22.4px] break-words overflow-hidden">{item.question}</p>
                     </div>
                   </div>
                   <div className="relative shrink-0 size-4">
@@ -180,14 +180,14 @@ export default function EighthSection() {
                 >
                   {item.answer && (
                     <div className="box-border content-stretch flex flex-col items-start justify-start p-[16px] border-t border-orange-100">
-                      <div className="content-stretch flex gap-4 items-start justify-start overflow-clip relative shrink-0 w-full">
+                      <div className="content-stretch flex gap-4 items-start justify-start relative w-full">
                         <div className="bg-[#f97316] content-stretch flex items-center justify-center relative rounded-[18px] shrink-0 size-9">
                           <div className="flex items-center justify-center relative shrink-0">
                             <img alt="" className="block max-w-none size-full" src={imgVector1} />
                           </div>
                         </div>
-                        <div className="flex flex-col justify-center leading-[28px] relative shrink-0 text-[13.563px] text-slate-800 tracking-[0.7px] whitespace-pre">
-                          <p className="whitespace-pre-wrap">{item.answer}</p>
+                        <div className="flex flex-col justify-center leading-[28px] relative flex-1 min-w-0 text-[13.563px] text-slate-800 tracking-[0.7px]">
+                          <p className="break-words overflow-wrap-anywhere">{item.answer}</p>
                         </div>
                       </div>
                     </div>
@@ -249,8 +249,11 @@ export default function EighthSection() {
                 data-node-id="60:4109" 
                 style={{ backgroundImage: `url('${imgContainer}')` }} 
               />
-              <div 
-                className="absolute bg-gradient-to-b from-[#9dde33] left-1/2 rounded to-[#3c840e] top-[49px] translate-x-[-50%] cursor-pointer hover:from-[#8bc929] hover:to-[#2d6b0a] transition-colors" 
+              <a 
+                href="https://line.me/R/ti/p/@508bxanx"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute bg-gradient-to-b from-[#9dde33] left-1/2 rounded to-[#3c840e] top-[49px] translate-x-[-50%] cursor-pointer hover:from-[#8bc929] hover:to-[#2d6b0a] transition-colors block" 
                 data-name="Link - LINEで無料診断をする" 
                 data-node-id="60:4110"
               >
@@ -320,7 +323,7 @@ export default function EighthSection() {
                 </div>
                 <div className="absolute inset-0 pointer-events-none shadow-[0px_1px_0px_2px_inset_rgba(255,255,255,0.4)]" />
                 <div className="absolute border-2 border-[#3c840e] border-solid inset-0 pointer-events-none rounded shadow-[0px_1px_3px_0px_rgba(0,0,0,0.2)]" />
-              </div>
+              </a>
             </div>
             <div 
               className="bg-center bg-cover bg-no-repeat h-[155px] shrink-0 w-[332px] relative z-10" 

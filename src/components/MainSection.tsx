@@ -10,83 +10,83 @@ const img2 = "/assets/07b07fb84de3a344d2762f0437b6ea82b5cc5d70.png";
 const imgImageBackground =
   "/assets/2dd65ec8aac718017c782ecf6707c5a25baa26fe.png";
 const img4 = "/assets/11c2a2bb75744378766868312f87e935261430c4.png";
-const imgVector = "/assets/4eeee62fbc51abf7825dde4f40ac642dd2459414.svg";
-const imgComponent1 = "/assets/d1dec2121c0c79125eaeea4981d65932377e81a7.svg";
+// const imgVector = "/assets/4eeee62fbc51abf7825dde4f40ac642dd2459414.svg";
+// const imgComponent1 = "/assets/d1dec2121c0c79125eaeea4981d65932377e81a7.svg";
 
-interface Component1Props {
-  variant?:
-    | "1"
-    | "2"
-    | "3"
-    | "4"
-    | "5"
-    | "6"
-    | "7"
-    | "8"
-    | "9"
-    | "10"
-    | "11"
-    | "12"
-    | "13"
-    | "14"
-    | "15"
-    | "16"
-    | "17"
-    | "18"
-    | "19"
-    | "20"
-    | "21"
-    | "22"
-    | "23"
-    | "24"
-    | "25"
-    | "26"
-    | "27"
-    | "28"
-    | "29"
-    | "30"
-    | "31"
-    | "32"
-    | "33"
-    | "34"
-    | "35"
-    | "36"
-    | "37"
-    | "38"
-    | "39"
-    | "40"
-    | "41"
-    | "42"
-    | "43"
-    | "44"
-    | "45"
-    | "46"
-    | "47"
-    | "48"
-    | "49"
-    | "50";
-}
+// interface Component1Props {
+//   variant?:
+//     | "1"
+//     | "2"
+//     | "3"
+//     | "4"
+//     | "5"
+//     | "6"
+//     | "7"
+//     | "8"
+//     | "9"
+//     | "10"
+//     | "11"
+//     | "12"
+//     | "13"
+//     | "14"
+//     | "15"
+//     | "16"
+//     | "17"
+//     | "18"
+//     | "19"
+//     | "20"
+//     | "21"
+//     | "22"
+//     | "23"
+//     | "24"
+//     | "25"
+//     | "26"
+//     | "27"
+//     | "28"
+//     | "29"
+//     | "30"
+//     | "31"
+//     | "32"
+//     | "33"
+//     | "34"
+//     | "35"
+//     | "36"
+//     | "37"
+//     | "38"
+//     | "39"
+//     | "40"
+//     | "41"
+//     | "42"
+//     | "43"
+//     | "44"
+//     | "45"
+//     | "46"
+//     | "47"
+//     | "48"
+//     | "49"
+//     | "50";
+// }
 
-function Component1({ variant = "1" }: Component1Props) {
-  if (variant === "34") {
-    return (
-      <div
-        className="relative size-full"
-        data-name="variant=34"
-        data-node-id="1:900"
-      >
-        <div
-          className="absolute bottom-[6%] left-0 right-[-0.04%] top-[6.93%]"
-          data-name="Vector"
-          data-node-id="1:899"
-        >
-          <img alt="" className="block max-w-none size-full" src={imgVector} />
-        </div>
-      </div>
-    );
-  }
-  return null;
-}
+// function Component1({ variant = "1" }: Component1Props) {
+//   if (variant === "34") {
+//     return (
+//       <div
+//         className="relative size-full"
+//         data-name="variant=34"
+//         data-node-id="1:900"
+//       >
+//         <div
+//           className="absolute bottom-[6%] left-0 right-[-0.04%] top-[6.93%]"
+//           data-name="Vector"
+//           data-node-id="1:899"
+//         >
+//           <img alt="" className="block max-w-none size-full" src={imgVector} />
+//         </div>
+//       </div>
+//     );
+//   }
+//   return null;
+// }
 
 export default function MainSection() {
   return (
@@ -142,8 +142,11 @@ export default function MainSection() {
                 data-name="Container"
                 data-node-id="1:4148"
               >
-                <div
-                  className="absolute bg-gradient-to-b from-[#9dde33] left-1/2 rounded to-[#3c840e] top-[99.52px] translate-x-[-50%] cursor-pointer hover:from-[#8bc929] hover:to-[#2d6b0a] transition-colors"
+                <a
+                  href="https://line.me/R/ti/p/@508bxanx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute bg-gradient-to-b from-[#9dde33] left-1/2 rounded to-[#3c840e] top-[99.52px] translate-x-[-50%] cursor-pointer hover:from-[#8bc929] hover:to-[#2d6b0a] transition-colors block"
                   data-name="Link - LINEで無料診断をする"
                   data-node-id="1:4174"
                 >
@@ -220,7 +223,7 @@ export default function MainSection() {
                     aria-hidden="true"
                     className="absolute border-2 border-[#3c840e] border-solid inset-0 pointer-events-none rounded shadow-[0px_1px_3px_0px_rgba(0,0,0,0.2)]"
                   />
-                </div>
+                </a>
               </div>
               <div
                 className="bg-center bg-cover bg-no-repeat h-[155px] shrink-0 w-[332px]"

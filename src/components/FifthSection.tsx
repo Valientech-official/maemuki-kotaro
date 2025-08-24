@@ -34,11 +34,14 @@ export default function FifthSection() {
           width: 100%;
           height: 135px;
           background-color: #FDE7DB;
-          z-index: 1;
-        }
-        .fifth-section > *:not(style) {
-          position: relative;
           z-index: 2;
+        }
+        .fifth-section > *:not(style):not(.absolute) {
+          position: relative;
+          z-index: 3;
+        }
+        .fifth-section .absolute[style*="z-index: 0"] {
+          z-index: 1 !important;
         }
       `}</style>
       <div 
@@ -106,8 +109,11 @@ export default function FifthSection() {
                 data-node-id="58:4008" 
                 style={{ backgroundImage: `url('${imgContainer}')` }} 
               />
-              <div 
-                className="absolute bg-gradient-to-b from-[#9dde33] left-1/2 rounded to-[#3c840e] top-[49px] translate-x-[-50%] cursor-pointer hover:from-[#8bc929] hover:to-[#2d6b0a] transition-colors" 
+              <a 
+                href="https://line.me/R/ti/p/@508bxanx"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute bg-gradient-to-b from-[#9dde33] left-1/2 rounded to-[#3c840e] top-[49px] translate-x-[-50%] cursor-pointer hover:from-[#8bc929] hover:to-[#2d6b0a] transition-colors block" 
                 data-name="Link - LINEで無料診断をする" 
                 data-node-id="58:4009"
               >
@@ -180,7 +186,7 @@ export default function FifthSection() {
                   aria-hidden="true" 
                   className="absolute border-2 border-[#3c840e] border-solid inset-0 pointer-events-none rounded shadow-[0px_1px_3px_0px_rgba(0,0,0,0.2)]" 
                 />
-              </div>
+              </a>
             </div>
             <div 
               className="bg-center bg-cover bg-no-repeat h-[155px] shrink-0 w-[332px]" 

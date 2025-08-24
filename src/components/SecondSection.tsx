@@ -14,7 +14,7 @@ export default function SecondSection() {
   return (
     <div className="bg-[rgba(228,100,33,0.2)] box-border content-stretch flex flex-col items-start justify-start pb-0 pt-14 px-4 relative w-[390px] overflow-hidden" data-name="Section" data-node-id="1:4456">
       <div className="content-stretch flex flex-col gap-[32.01px] items-start justify-start relative shrink-0 w-full" data-name="Container" data-node-id="1:4457">
-        <div className="h-[1287px] relative shrink-0 w-full" data-name="Container" data-node-id="1:4471">
+        <div className="h-[1387px] relative shrink-0 w-full" data-name="Container" data-node-id="1:4471">
           <div className="absolute content-stretch flex flex-col gap-[11.99px] items-center justify-start left-1/2 top-[369px] translate-x-[-50%]" data-name="Container" data-node-id="1:4472">
             <div className="content-stretch flex flex-col items-center justify-start shrink-0 w-[70px]" data-name="Mask Group" data-node-id="1:4473" />
             <div className="content-stretch flex flex-col items-center justify-start shrink-0 w-[70px]" data-name="Mask Group" data-node-id="1:4476" />
@@ -27,7 +27,7 @@ export default function SecondSection() {
             <div className="content-stretch flex flex-col gap-8 items-center justify-end relative shrink-0 w-full z-10" data-name="Container" data-node-id="1:4733">
               <div className="h-[182.77px] relative shrink-0 w-[358px]" data-name="Container" data-node-id="1:4734">
                 <div className="absolute bg-left bg-no-repeat bg-size-[106.52%_195.15%] h-[51px] left-1/2 top-[-26px] translate-x-[-50%] w-[276px]" data-name="Container" data-node-id="1:4735" style={{ backgroundImage: `url('${imgContainer}')` }} />
-                <div className="absolute bg-gradient-to-b from-[#9dde33] left-1/2 rounded to-[#3c840e] top-[49px] translate-x-[-50%] cursor-pointer hover:from-[#8bc929] hover:to-[#2d6b0a] transition-colors" data-name="Link - LINEで無料診断をする" data-node-id="54:3927">
+                <a href="https://line.me/R/ti/p/@508bxanx" target="_blank" rel="noopener noreferrer" className="absolute bg-gradient-to-b from-[#9dde33] left-1/2 rounded to-[#3c840e] top-[49px] translate-x-[-50%] cursor-pointer hover:from-[#8bc929] hover:to-[#2d6b0a] transition-colors block" data-name="Link - LINEで無料診断をする" data-node-id="54:3927">
                   <div className="box-border content-stretch flex items-start justify-center overflow-clip pb-[18px] pt-[22px] px-0.5 relative">
                     <div className="content-stretch flex flex-col gap-[11px] items-center justify-center min-w-[354px] relative self-stretch shrink-0" data-name="Container" data-node-id="54:3928">
                       <div className="box-border content-stretch flex gap-2 items-end justify-center pl-0.5 pr-1 py-0 relative shrink-0 w-full" data-name="Container" data-node-id="54:3929">
@@ -57,7 +57,7 @@ export default function SecondSection() {
                   </div>
                   <div className="absolute inset-0 pointer-events-none shadow-[0px_1px_0px_2px_inset_rgba(255,255,255,0.4)]" />
                   <div aria-hidden="true" className="absolute border-2 border-[#3c840e] border-solid inset-0 pointer-events-none rounded shadow-[0px_1px_3px_0px_rgba(0,0,0,0.2)]" />
-                </div>
+                </a>
               </div>
               <div className="bg-center bg-cover bg-no-repeat h-[155px] shrink-0 w-[332px] relative z-10" data-name="段落テキストのコピー (3) 1" data-node-id="55:3954" style={{ backgroundImage: `url('${img31}')` }} />
             </div>

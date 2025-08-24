@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 
 interface AnimatedCounterProps {
@@ -20,14 +20,14 @@ export default function AnimatedCounter({
 }: AnimatedCounterProps) {
   const [displayValue, setDisplayValue] = useState(0);
   const [showQuestions, setShowQuestions] = useState(true);
-  const [currentTarget, setCurrentTarget] = useState(0);
+  // const [currentTarget, setCurrentTarget] = useState(0);
   const counterRef = useRef<HTMLDivElement>(null);
   const [hasStarted, setHasStarted] = useState(false);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
-  const getRandomValue = () => {
+  const getRandomValue = useCallback(() => {
     return Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue;
-  };
+  }, [maxValue, minValue]);
 
   useEffect(() => {
     if (!counterRef.current) return;
@@ -70,11 +70,11 @@ export default function AnimatedCounter({
     };
   }, []);
 
-  const startRepeatingAnimation = () => {
+  const startRepeatingAnimation = useCallback(() => {
     const runAnimation = () => {
       const newTarget = getRandomValue();
       console.log('Running animation with target:', newTarget);
-      setCurrentTarget(newTarget);
+      // setCurrentTarget(newTarget);
       
       // Show question marks
       setShowQuestions(true);
@@ -113,7 +113,7 @@ export default function AnimatedCounter({
     }, repeatInterval);
     
     console.log('Interval set with ID:', intervalRef.current);
-  };
+  }, [repeatInterval, getRandomValue, duration]);
 
   const formatNumber = (num: number) => {
     return num.toString().padStart(3, '0');

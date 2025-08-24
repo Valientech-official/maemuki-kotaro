@@ -3,6 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 
+// この部分はclient componentなので、メタデータはlayout.tsxまたは別途設定
+
 export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: "",

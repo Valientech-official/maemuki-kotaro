@@ -1,0 +1,12 @@
+import { MetadataRoute } from 'next'
+ 
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: {
+      userAgent: '*',
+      allow: '/',
+      disallow: ['/api/', '/_next/', '/assets/'],
+    },
+    sitemap: 'https://maemuki.vercel.app/sitemap.xml',
+  }
+}

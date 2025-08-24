@@ -1,14 +1,28 @@
 import Header from "@/components/Header";
+import MainSection from "@/components/MainSection";
+import SecondSection from "@/components/SecondSection";
+import ThirdSection from "@/components/ThirdSection";
+import FourthSection from "@/components/FourthSection";
+import FifthSection from "@/components/FifthSection";
+import SixthSection from "@/components/SixthSection";
+import SeventhSection from "@/components/SeventhSection";
+import EighthSection from "@/components/EighthSection";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50 flex justify-center">
       <div className="w-[390px] bg-white shadow-lg">
         <Header />
-        <main className="px-4 py-8">
-          <h1 className="text-4xl font-bold text-center mb-8">Welcome to Maemuki</h1>
-          <p className="text-lg text-center text-gray-600">Landing page coming soon...</p>
-        </main>
+        <MainSection />
+        <SecondSection />
+        <ThirdSection />
+        <FourthSection />
+        <FifthSection />
+        <SixthSection />
+        <SeventhSection />
+        <EighthSection />
+        <Footer />
       </div>
     </div>
   );

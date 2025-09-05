@@ -202,8 +202,8 @@ export default function EighthSection() {
                     <div className="box-border content-stretch flex flex-col items-start justify-start p-[16px] border-t border-orange-100">
                       <div className="content-stretch flex gap-4 items-start justify-start relative w-full">
                         <div className="bg-[#f97316] content-stretch flex items-center justify-center relative rounded-[18px] shrink-0 size-9">
-                          <div className="flex items-center justify-center relative shrink-0">
-                            <img alt="" className="block max-w-none size-full" src={imgVector1} />
+                          <div className="flex flex-col font-bold justify-center leading-[0] not-italic relative shrink-0 text-white text-[16px] text-center text-nowrap tracking-[0.7px]">
+                            <p className="leading-[16px] whitespace-pre">A</p>
                           </div>
                         </div>
                         <div className="flex flex-col justify-center leading-[28px] relative flex-1 min-w-0 text-[13.563px] text-slate-800 tracking-[0.7px]">

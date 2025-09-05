@@ -96,7 +96,7 @@ export default function WarningBanner() {
           className="[text-shadow:rgba(0,0,0,0.1)_1px_1px_0px] flex flex-col font-bold justify-center leading-[0] relative shrink-0 text-[#ffffff] text-[15.6px] text-nowrap tracking-[1.39px]"
         >
           <p className="leading-[15.6px] whitespace-pre">
-            9月中に退職予定の方はお急ぎください
+            {new Date().getMonth() + 1}月中に退職予定の方はお急ぎください
           </p>
         </div>
         <div ref={icon2Ref} className="relative shrink-0 size-3.5">

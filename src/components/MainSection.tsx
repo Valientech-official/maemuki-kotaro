@@ -4,7 +4,7 @@ import AnimatedCounter from "./AnimatedCounter";
 import WarningBanner from "./WarningBanner";
 
 const imgSection = "/assets/114883b8a9555e50e67df164c29f7cbf54115f1f.png";
-const img1 = "/assets/1329945e1ec1dfabf96328544cee5756c52ce9ea.png";
+const img1 = "/assets/段落テキストのコピー (28).png";
 const img31 = "/assets/fd05d40e5c3b0d797ff1a0caf4d567883493d3c1.png";
 const img2 = "/assets/07b07fb84de3a344d2762f0437b6ea82b5cc5d70.png";
 const imgImageBackground =

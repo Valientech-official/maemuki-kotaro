@@ -14,14 +14,14 @@ export default function SecondSection() {
   return (
     <div className="bg-[rgba(228,100,33,0.2)] box-border content-stretch flex flex-col items-start justify-start pb-0 pt-14 px-4 relative w-[390px] overflow-hidden" data-name="Section" data-node-id="1:4456">
       <div className="content-stretch flex flex-col gap-[32.01px] items-start justify-start relative shrink-0 w-full" data-name="Container" data-node-id="1:4457">
-        <div className="h-[1387px] relative shrink-0 w-full" data-name="Container" data-node-id="1:4471">
+        <div className="h-[1310px] relative shrink-0 w-full" data-name="Container" data-node-id="1:4471">
           <div className="absolute content-stretch flex flex-col gap-[11.99px] items-center justify-start left-1/2 top-[369px] translate-x-[-50%]" data-name="Container" data-node-id="1:4472">
             <div className="content-stretch flex flex-col items-center justify-start shrink-0 w-[70px]" data-name="Mask Group" data-node-id="1:4473" />
             <div className="content-stretch flex flex-col items-center justify-start shrink-0 w-[70px]" data-name="Mask Group" data-node-id="1:4476" />
           </div>
-          <div className="absolute box-border content-stretch flex flex-col gap-4 h-[722px] items-center justify-start left-1/2 pb-20 pt-0 px-0 top-[651px] translate-x-[-50%]" data-name="Container" data-node-id="1:4657">
-            <div className="absolute bg-center bg-cover bg-no-repeat bottom-0 h-[650px] left-[-50px] rounded-tl-[300px] rounded-tr-[300px] w-[490px] overflow-hidden" data-name="Gradient+Background" data-node-id="1:4658" style={{ backgroundImage: `url('${imgGradientBackground}')` }} />
-            <div className="box-border content-stretch flex flex-col h-[232px] items-center justify-start pb-16 pt-0 px-0 relative shrink-0 w-full z-10" data-name="Container" data-node-id="1:4659">
+          <div className="absolute box-border content-stretch flex flex-col gap-4 h-[650px] items-center justify-start left-1/2 pb-0 pt-0 px-0 top-[651px] translate-x-[-50%]" data-name="Container" data-node-id="1:4657">
+            <div className="absolute bg-center bg-cover bg-no-repeat bottom-0 h-[580px] left-[-50px] rounded-tl-[300px] rounded-tr-[300px] w-[490px] overflow-hidden" data-name="Gradient+Background" data-node-id="1:4658" style={{ backgroundImage: `url('${imgGradientBackground}')` }} />
+            <div className="box-border content-stretch flex flex-col h-[232px] items-center justify-start pb-0 pt-0 px-0 relative shrink-0 w-full z-10" data-name="Container" data-node-id="1:4659">
               <div className="bg-no-repeat bg-size-[100.33%_113.11%] bg-top h-[206px] shrink-0 w-[352px]" data-name="段落テキストのコピー (9) 1" data-node-id="54:3917" style={{ backgroundImage: `url('${img91}')` }} />
             </div>
             <div className="content-stretch flex flex-col gap-8 items-center justify-end relative shrink-0 w-full z-10" data-name="Container" data-node-id="1:4733">

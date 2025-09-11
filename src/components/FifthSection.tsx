@@ -55,7 +55,7 @@ export default function FifthSection() {
         data-name="Container" 
         data-node-id="1:5139"
       >
-        <div className="h-[150px] shrink-0 w-full" data-name="Container" data-node-id="1:5140" />
+        <div className="h-[50px] shrink-0 w-full" data-name="Container" data-node-id="1:5140" />
         <div 
           className="content-stretch flex flex-col gap-12 items-center justify-start relative shrink-0 w-full" 
           data-name="Container" 

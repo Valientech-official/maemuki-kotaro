@@ -7,7 +7,7 @@ const img25 = "/assets/77f3c353bb51a67ebdc4bfa3d85ea742bae86668.png";
 export default function SeventhSection() {
   return (
     <div 
-      className="bg-center bg-cover bg-no-repeat box-border content-stretch flex flex-col items-center justify-start pb-14 pt-8 px-0 relative w-[390px]" 
+      className="bg-center bg-cover bg-no-repeat box-border content-stretch flex flex-col items-center justify-start pb-4 pt-8 px-0 relative w-[390px]" 
       data-name="Section" 
       data-node-id="1:5711" 
       style={{ 

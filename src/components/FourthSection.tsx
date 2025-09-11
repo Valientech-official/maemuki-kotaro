@@ -7,7 +7,7 @@ const img131 = "/assets/2a65bd179f1f176c675278c172bb05d19696f5ed.png";
 export default function FourthSection() {
   return (
     <div 
-      className="content-stretch flex flex-col gap-12 items-center justify-start relative w-[390px] z-5 h-[600px] pt-16" 
+      className="content-stretch flex flex-col gap-12 items-center justify-start relative w-[390px] z-5 h-[600px] pt-4" 
       data-name="Section" 
       data-node-id="1:5066"
       style={{ 
@@ -25,7 +25,7 @@ export default function FourthSection() {
       />
       
       {/* アニメーション付き三角形 */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-50">
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-50">
         <AnimatedTriangles />
       </div>
     </div>

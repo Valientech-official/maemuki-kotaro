@@ -45,7 +45,7 @@ export default function FifthSection() {
         }
       `}</style>
       <div 
-        className="bg-center bg-cover bg-no-repeat h-[222px] shrink-0 w-[389px] mt-[50px]" 
+        className="bg-center bg-cover bg-no-repeat h-[250px] shrink-0 w-[389px] mt-[40px]" 
         data-name="段落テキストのコピー (14) 1" 
         data-node-id="57:3963" 
         style={{ backgroundImage: `url('${img141}')` }} 

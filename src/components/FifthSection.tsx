@@ -3,7 +3,7 @@
 import AnimatedCounter from "./AnimatedCounter";
 
 const imgSection = "/assets/114883b8a9555e50e67df164c29f7cbf54115f1f.png";
-const img141 = "/assets/bd89a3b0a4047d84e79450e172dad1f2d0d36e9c.png";
+const img141 = "/assets/段落テキスト (2).png";
 const img151 = "/assets/bf0566e3ea0747d2b3e644f6590934ea7aaeb19f.png";
 const img161 = "/assets/1536210fb751a7d2312d599f7491e8e3d0df6309.png";
 const img171 = "/assets/547d4f9de3dbdb7f68b3336700397ea0108a43dd.png";
@@ -55,7 +55,7 @@ export default function FifthSection() {
         data-name="Container" 
         data-node-id="1:5139"
       >
-        <div className="h-[50px] shrink-0 w-full" data-name="Container" data-node-id="1:5140" />
+        <div className="h-[15px] shrink-0 w-full" data-name="Container" data-node-id="1:5140" />
         <div 
           className="content-stretch flex flex-col gap-12 items-center justify-start relative shrink-0 w-full" 
           data-name="Container" 

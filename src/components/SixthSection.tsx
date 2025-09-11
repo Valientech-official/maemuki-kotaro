@@ -24,7 +24,7 @@ export default function SixthSection() {
           style={{ backgroundImage: `url('${imgBackground}')` }} 
         />
         <div 
-          className="bg-center bg-cover bg-no-repeat h-[163px] shrink-0 w-[392px] relative z-10" 
+          className="bg-center bg-cover bg-no-repeat h-[163px] shrink-0 w-[392px] relative z-10 -mt-6" 
           data-name="段落テキストのコピー (20)" 
           data-node-id="60:4037" 
           style={{ backgroundImage: `url('${img20}')` }} 

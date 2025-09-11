@@ -152,7 +152,7 @@ export default function EighthSection() {
       </div>
       
       <div 
-        className="content-stretch flex flex-col gap-[120px] items-center justify-start relative shrink-0 px-6 pt-[60px] w-full" 
+        className="content-stretch flex flex-col gap-[80px] items-center justify-start relative shrink-0 px-6 pt-[30px] w-full" 
         data-name="Container" 
         data-node-id="1:5851"
       >
@@ -220,7 +220,7 @@ export default function EighthSection() {
         </div>
         
         <div 
-          className="box-border content-stretch flex flex-col gap-4 h-[722px] items-center justify-start pb-20 pt-0 px-0 relative shrink-0" 
+          className="box-border content-stretch flex flex-col gap-4 h-[722px] items-center justify-start pt-0 px-0 relative shrink-0" 
           data-name="Container" 
           data-node-id="60:4103"
         >

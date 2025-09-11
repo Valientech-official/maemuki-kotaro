@@ -8,7 +8,7 @@ const imgContainer = "/assets/07b07fb84de3a344d2762f0437b6ea82b5cc5d70.png";
 const img31 = "/assets/fd05d40e5c3b0d797ff1a0caf4d567883493d3c1.png";
 const img101 = "/assets/7111ac4d50de3c942680fa284da26804cf761e09.png";
 const img71 = "/assets/7cf5f2d69143a956f1d6ec09779bfcccc383f0c5.png";
-const img61 = "/assets/2fe36fd7f94fcc063b55b99405698f0c373b8308.png";
+const img61 = "/assets/段落テキストのコピー (29).png";
 
 export default function SecondSection() {
   return (

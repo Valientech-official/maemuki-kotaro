@@ -84,9 +84,9 @@ export async function POST(request: NextRequest) {
           <hr style="border: none; height: 1px; background-color: #ddd; margin: 30px 0;">
           
           <div style="color: #666; font-size: 12px;">
-            <p><strong>株式会社feer</strong><br>
+            <p><strong>株式会社MAEMUKI</strong><br>
             〒160-0023 東京都新宿区西新宿7丁目5-5プラザ西新宿309<br>
-            Website: https://feer-design.com</p>
+            メール: info@maemuki-support.com</p>
             
             <p>※このメールは自動送信です。このメールに直接返信いただいても対応できません。<br>
             ご質問等がございましたら、改めてお問い合わせフォームよりご連絡ください。</p>

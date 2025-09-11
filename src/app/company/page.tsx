@@ -13,12 +13,12 @@ export default function CompanyPage() {
             <div className="space-y-4">
               <div className="border-b border-gray-200 pb-4">
                 <h3 className="font-semibold text-gray-800 mb-2">会社名</h3>
-                <p>株式会社feer（フィール）</p>
+                <p>株式会社MAEMUKI</p>
               </div>
 
               <div className="border-b border-gray-200 pb-4">
                 <h3 className="font-semibold text-gray-800 mb-2">代表者</h3>
-                <p>代表取締役</p>
+                <p>鎌田 大介</p>
               </div>
 
               <div className="border-b border-gray-200 pb-4">
@@ -31,29 +31,10 @@ export default function CompanyPage() {
 
               <div className="border-b border-gray-200 pb-4">
                 <h3 className="font-semibold text-gray-800 mb-2">事業内容</h3>
-                <ul className="space-y-1">
-                  <li>• PR・広告戦略の企画設計</li>
-                  <li>• タレントキャスティング</li>
-                  <li>• Webサイト・動画コンテンツ制作</li>
-                  <li>• デジタル広告運用</li>
-                  <li>• 失業保険相談サービス</li>
-                </ul>
+                <p>キャリア伴走型サービス</p>
               </div>
 
-              <div className="border-b border-gray-200 pb-4">
-                <h3 className="font-semibold text-gray-800 mb-2">企業理念</h3>
-                <p>
-                  「feer free design - 自由に感じるままに行動する」<br/>
-                  私たちは、お客様が自由に感じるままに行動できるよう、最適なソリューションを提供いたします。
-                </p>
-              </div>
 
-              <div className="border-b border-gray-200 pb-4">
-                <h3 className="font-semibold text-gray-800 mb-2">失業保険相談サービスについて</h3>
-                <p>
-                  失業保険の手続きや受給に関する疑問・不安を解決するため、専門的な知識を基に無料相談を実施しています。一人ひとりの状況に合わせた最適なアドバイスを提供し、安心して手続きを進めていただけるようサポートいたします。
-                </p>
-              </div>
 
               <div className="border-b border-gray-200 pb-4">
                 <h3 className="font-semibold text-gray-800 mb-2">お問い合わせ</h3>
@@ -62,26 +43,12 @@ export default function CompanyPage() {
                 </p>
               </div>
 
-              <div>
-                <h3 className="font-semibold text-gray-800 mb-2">関連サイト</h3>
-                <p>
-                  コーポレートサイト：
-                  <a 
-                    href="https://feer-design.com" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-blue-600 underline ml-1"
-                  >
-                    https://feer-design.com
-                  </a>
-                </p>
-              </div>
             </div>
           </section>
 
           <div className="text-center mt-8 pt-4 border-t border-gray-200">
             <p className="text-xs text-gray-600">
-              株式会社feer
+              株式会社MAEMUKI
             </p>
           </div>
         </div>

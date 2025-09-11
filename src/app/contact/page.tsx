@@ -197,7 +197,7 @@ export default function ContactPage() {
               運営会社情報
             </p>
             <div className="text-xs text-gray-500 space-y-1">
-              <p>株式会社feer</p>
+              <p>株式会社MAEMUKI</p>
               <p>〒160-0023</p>
               <p>東京都新宿区西新宿7丁目5-5プラザ西新宿309</p>
             </div>

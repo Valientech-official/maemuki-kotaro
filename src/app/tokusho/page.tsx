@@ -12,84 +12,99 @@ export default function TokushoPage() {
           <section>
             <div className="space-y-4">
               <div className="border-b border-gray-200 pb-4">
-                <h3 className="font-semibold text-gray-800 mb-2">販売事業者名</h3>
-                <p>株式会社feer</p>
+                <h3 className="font-semibold text-gray-800 mb-2">販売業者</h3>
+                <p>株式会社MAEMUKI</p>
               </div>
 
               <div className="border-b border-gray-200 pb-4">
-                <h3 className="font-semibold text-gray-800 mb-2">代表者名</h3>
-                <p>代表取締役</p>
+                <h3 className="font-semibold text-gray-800 mb-2">運営統括責任者</h3>
+                <p>鎌田大介</p>
               </div>
 
               <div className="border-b border-gray-200 pb-4">
                 <h3 className="font-semibold text-gray-800 mb-2">所在地</h3>
+                <p>東京都新宿区西新宿7-5-5プラザ西新宿309</p>
+              </div>
+
+              <div className="border-b border-gray-200 pb-4">
+                <h3 className="font-semibold text-gray-800 mb-2">電話番号</h3>
+                <p>問い合わせがあった場合に遅滞なく開示します</p>
+              </div>
+
+              <div className="border-b border-gray-200 pb-4">
+                <h3 className="font-semibold text-gray-800 mb-2">メールアドレス</h3>
                 <p>
-                  〒160-0023<br/>
-                  東京都新宿区西新宿7丁目5-5プラザ西新宿309
+                  info@maemuki-support.com<br/>
+                  （24時間受付、回答は営業時間内となります）
                 </p>
               </div>
 
               <div className="border-b border-gray-200 pb-4">
-                <h3 className="font-semibold text-gray-800 mb-2">連絡先</h3>
+                <h3 className="font-semibold text-gray-800 mb-2">販売価格</h3>
                 <p>
-                  お問い合わせは、当サイトのお問い合わせフォーム、またはLINE公式アカウントよりお願いいたします。
+                  ・失業手当プラン：¥220,000（税込）<br/>
+                  ・傷病手当プラン：¥330,000（税込）<br/>
+                  ・失業手当+傷病手当プラン：¥440,000（税込）
                 </p>
               </div>
 
               <div className="border-b border-gray-200 pb-4">
-                <h3 className="font-semibold text-gray-800 mb-2">サービス内容</h3>
-                <p>失業保険に関する相談・アドバイスサービス</p>
-              </div>
-
-              <div className="border-b border-gray-200 pb-4">
-                <h3 className="font-semibold text-gray-800 mb-2">料金</h3>
+                <h3 className="font-semibold text-gray-800 mb-2">追加手数料等</h3>
                 <p>
-                  基本相談：無料<br/>
-                  詳細な個別サポートが必要な場合は、別途料金が発生する場合があります。<br/>
-                  料金については事前にご説明し、同意をいただいた上でサービスを提供いたします。
+                  ・銀行振込手数料：お客様負担<br/>
+                  ・インターネット接続には別途、ご契約の通信事業者への通信料が発生します
                 </p>
               </div>
 
               <div className="border-b border-gray-200 pb-4">
-                <h3 className="font-semibold text-gray-800 mb-2">支払方法</h3>
+                <h3 className="font-semibold text-gray-800 mb-2">営業時間</h3>
                 <p>
-                  有料サービスをご利用の場合：<br/>
-                  ・銀行振込<br/>
-                  ・クレジットカード決済<br/>
-                  ・その他当社指定の方法
+                  ・サービスお申込み：24時間受け付け<br/>
+                  ・カスタマーサポート対応時間：9:00〜21:00（年中無休）<br/>
+                  <br/>
+                  ※繁忙期は対応が遅れる場合がございます。
                 </p>
               </div>
 
               <div className="border-b border-gray-200 pb-4">
-                <h3 className="font-semibold text-gray-800 mb-2">支払時期</h3>
-                <p>サービス開始前の前払いとなります。</p>
+                <h3 className="font-semibold text-gray-800 mb-2">受け付け可能な決済手段</h3>
+                <p>・銀行振込</p>
               </div>
 
               <div className="border-b border-gray-200 pb-4">
-                <h3 className="font-semibold text-gray-800 mb-2">サービス提供時期</h3>
-                <p>ご入金確認後、速やかにサービスを開始いたします。</p>
-              </div>
-
-              <div className="border-b border-gray-200 pb-4">
-                <h3 className="font-semibold text-gray-800 mb-2">キャンセル・返金について</h3>
+                <h3 className="font-semibold text-gray-800 mb-2">決済期間</h3>
                 <p>
-                  ・サービス開始前：キャンセル可能、手数料を除き返金いたします。<br/>
-                  ・サービス開始後：サービスの性質上、原則として返金はいたしかねます。<br/>
-                  ・詳細については、個別にお問い合わせください。
+                  銀行振込の場合<br/>
+                  ご注文から5営業日以内にお支払いください。期限内にお支払いがない場合、注文は自動的にキャンセルとなります。
                 </p>
               </div>
 
               <div className="border-b border-gray-200 pb-4">
-                <h3 className="font-semibold text-gray-800 mb-2">個人情報の取り扱い</h3>
-                <p>
-                  お客様の個人情報については、当社のプライバシーポリシーに従って適切に管理いたします。
-                </p>
+                <h3 className="font-semibold text-gray-800 mb-2">引渡時期</h3>
+                <p>決済完了後1～3営業日以内にサポートの開始をいたします。サポート期間は給付金の受給期間に合わせて変化します。</p>
+              </div>
+
+              <div className="border-b border-gray-200 pb-4">
+                <h3 className="font-semibold text-gray-800 mb-2">交換および返品（返金ポリシー）</h3>
+                <div className="space-y-3">
+                  <div>
+                    <p className="font-medium">給付金サポート／転職サポートについて</p>
+                    <p>お客様のご都合による契約のキャンセルは提携クリニックのご紹介を行う前に限り可能です。その場合は全額返金いたします。サポート開始後のキャンセルは如何なる場合も返金はできません。</p>
+                  </div>
+                  <div>
+                    <p className="font-medium">サービスに不備があった場合</p>
+                    <p>当社の責任によるサービス提供の不備があった場合には、状況に応じて返金または代替サービスの提供を検討いたします。お客様サポート（info@maemuki-support.com）までご連絡ください。</p>
+                  </div>
+                </div>
               </div>
 
               <div>
-                <h3 className="font-semibold text-gray-800 mb-2">免責事項</h3>
+                <h3 className="font-semibold text-gray-800 mb-2">その他 注意事項</h3>
                 <p>
-                  当サービスは失業保険に関する情報提供・相談を目的としており、具体的な手続きや結果について保証するものではありません。最終的な判断・手続きはお客様ご自身の責任において行っていただきますようお願いいたします。
+                  ・特定商取引法に基づく表記に関する情報開示請求があった場合には遅滞なく開示いたします。<br/>
+                  ・当社のサービスは法的に認められた範囲内での退職代行サービスとなります。<br/>
+                  ・労働条件に関する交渉や訴訟代行などの弁護士法に抵触する行為は行っておりません。<br/>
+                  ・サービス内容に関してご不明な点がある場合は、お申込み前にお問い合わせください。
                 </p>
               </div>
             </div>
@@ -97,8 +112,7 @@ export default function TokushoPage() {
 
           <div className="text-center mt-8 pt-4 border-t border-gray-200">
             <p className="text-xs text-gray-600">
-              制定日：2024年1月1日<br/>
-              株式会社feer
+              株式会社MAEMUKI
             </p>
           </div>
         </div>

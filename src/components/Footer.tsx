@@ -5,6 +5,7 @@ const imgLogo = "/assets/段落テキストのコピー (26).png";
 export default function Footer() {
   const footerLinks = [
     { text: "プライバシーポリシー", href: "/privacy" },
+    { text: "利用規約", href: "/terms" },
     { text: "利用者情報の外部送信", href: "/external-transmission" },
     { text: "特定商取引法に基づく表記", href: "/tokusho" },
     { text: "運営者情報", href: "/company" },

@@ -217,21 +217,6 @@ export default function EighthSection() {
             ))}
           </div>
           
-          <div 
-            className="bg-gradient-to-b from-[#f97316] h-12 relative rounded-3xl shrink-0 to-[#ea580c] z-[1] cursor-pointer hover:from-[#fb923c] hover:to-[#dc2626] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl" 
-            data-name="Button" 
-            data-node-id="1:5900"
-          >
-            <div className="box-border content-stretch flex h-12 items-center justify-center overflow-clip px-[25px] py-px relative">
-              <div className="content-stretch flex flex-col items-center justify-start relative shrink-0">
-                <div className="flex flex-col font-bold justify-center leading-[0] relative shrink-0 text-white text-[15.875px] text-center text-nowrap tracking-[0.4px]">
-                  <p className="leading-[25.6px] whitespace-pre">もっと見る</p>
-                </div>
-              </div>
-            </div>
-            <div className="absolute inset-0 pointer-events-none shadow-[0px_1px_0px_1px_inset_rgba(255,255,255,0.4)]" />
-            <div className="absolute border border-solid border-orange-600 inset-0 pointer-events-none rounded-3xl shadow-[0px_1px_3px_0px_rgba(0,0,0,0.2)]" />
-          </div>
         </div>
         
         <div 

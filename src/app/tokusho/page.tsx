@@ -41,11 +41,24 @@ export default function TokushoPage() {
 
               <div className="border-b border-gray-200 pb-4">
                 <h3 className="font-semibold text-gray-800 mb-2">販売価格</h3>
-                <p>
-                  ・失業手当プラン：¥220,000（税込）<br/>
-                  ・傷病手当プラン：¥330,000（税込）<br/>
-                  ・失業手当+傷病手当プラン：¥440,000（税込）
-                </p>
+                <div className="space-y-2">
+                  <p className="font-medium">【前払いプラン】</p>
+                  <p>
+                    ・失業手当のみ：¥250,000（税込）<br/>
+                    ・失業手当+傷病手当：¥450,000（税込）
+                  </p>
+                  <p className="font-medium mt-3">【成功報酬プラン】</p>
+                  <p>
+                    ・失業手当のみ：¥350,000（税込）<br/>
+                    ・失業手当+傷病手当：¥550,000（税込）
+                  </p>
+                  <p className="text-xs text-gray-600 mt-2">
+                    ※前払いプランはサポート開始時に一括でお支払いいただきます<br/>
+                    ※成功報酬プランは給付金からお支払いいただきます<br/>
+                    ※成功報酬プランは保証金をお預かりします（失業手当のみ：5万円/失業手当+傷病手当：10万円）<br/>
+                    ※支払い方法：①クレジットカード/②銀行口座
+                  </p>
+                </div>
               </div>
 
               <div className="border-b border-gray-200 pb-4">
@@ -68,7 +81,10 @@ export default function TokushoPage() {
 
               <div className="border-b border-gray-200 pb-4">
                 <h3 className="font-semibold text-gray-800 mb-2">受け付け可能な決済手段</h3>
-                <p>・銀行振込</p>
+                <p>
+                  ・クレジットカード<br/>
+                  ・銀行口座
+                </p>
               </div>
 
               <div className="border-b border-gray-200 pb-4">

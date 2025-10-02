@@ -95,6 +95,10 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <head>
+        <meta
+          name="facebook-domain-verification"
+          content="30xzlab3t2dfzumqlsbd36kvb6v77n"
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

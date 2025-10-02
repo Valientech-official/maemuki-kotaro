@@ -16,9 +16,15 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Previewing in this environment
+### 開発コンテナでのプレビュー方法
 
-If you are working inside the provided development container, run `npm run dev` and then open the forwarded port `3000` to preview the site in your browser. A fallback font may appear while offline, but the rest of the page will render normally.
+開発コンテナ内で画面を確認したい場合は、以下の手順を実行してください。
+
+1. ターミナルで `npm run dev` を実行し、Next.js の開発サーバーを起動します。サーバーが起動すると `http://localhost:3000` で待ち受けます。
+2. VS Code の「ポート転送」機能などを利用してポート `3000` をローカルに転送します。
+3. ローカルブラウザで `http://localhost:3000` にアクセスするとアプリをプレビューできます。
+
+フォントのダウンロードに失敗した場合は一時的に代替フォントが表示されることがありますが、機能自体には影響しません。
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 

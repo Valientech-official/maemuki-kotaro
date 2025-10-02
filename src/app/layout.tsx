@@ -66,7 +66,6 @@ export const metadata: Metadata = {
   },
   verification: {
     google: 'your-google-verification-code', // 実際のGoogle Search Console認証コードに置き換え
-    facebook: "30xzlab3t2dfzumqlsbd36kvb6v77n",
   },
   icons: {
     icon: [

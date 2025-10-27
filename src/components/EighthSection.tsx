@@ -285,7 +285,7 @@ export default function EighthSection() {
                 style={{ backgroundImage: `url('${imgContainer}')` }}
               />
               <a
-                href="https://s.lmes.jp/landing-qr/2007836384-wJY8499E?uLand=h9QD8x"
+                href="https://form.lmes.jp/landing-qr/2007836384-wJY8499E?uLand=azSkN6"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="absolute bg-gradient-to-b from-[#9dde33] left-1/2 rounded to-[#3c840e] top-[49px] translate-x-[-50%] cursor-pointer hover:from-[#8bc929] hover:to-[#2d6b0a] transition-colors block"

@@ -108,7 +108,7 @@ export default function ContactPage() {
               失業保険に関するご相談は、LINEでの無料相談が便利です。
             </p>
             <a
-              href="https://s.lmes.jp/landing-qr/2007836384-wJY8499E?uLand=h9QD8x"
+              href="https://form.lmes.jp/landing-qr/2007836384-wJY8499E?uLand=azSkN6"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-green-500 text-white px-4 py-2 rounded text-center hover:bg-green-600 transition-colors"
